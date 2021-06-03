@@ -164,7 +164,7 @@ name_label2.grid(row=6, sticky=W)
 email_label2.grid(row=6, column=1, sticky=W)
 pass_label2.grid(row=6, column=2, sticky=W)
 
-
+readfile()
 
 screen.mainloop()
 
