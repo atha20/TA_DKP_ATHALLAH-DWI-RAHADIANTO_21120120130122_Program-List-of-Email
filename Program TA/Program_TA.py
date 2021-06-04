@@ -13,7 +13,7 @@ class main_screen(object):
 
     def __init__(self, master):
         top = self.top = Toplevel(master)
-        top.title('Input Password')
+        top.title('Input Keyword')
         top.geometry("250x100")
         top.resizable(width=False, height=False)
         self.l = Label(top, text=" Keyword: ", font=('Times New Roman', 14, 'bold'), justify=CENTER)
