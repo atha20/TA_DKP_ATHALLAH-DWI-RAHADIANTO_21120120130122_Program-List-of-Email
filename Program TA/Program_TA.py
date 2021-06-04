@@ -107,12 +107,23 @@ def to_add():
     p = password.get()
     n = name.get()
     e = object_add(screen, n, p, m)
-    e.write()
-    name.delete(0, 'end')
-    email.delete(0, 'end')
-    password.delete(0, 'end')
-    messagebox.showinfo('Added Object', 'Successfully Added \n' + 'Name: ' + n + '\nEmail: ' + m + '\nPassword: ' + p)
-    readfile()
+    
+    if m == '':
+        messagebox.showerror('Error', 'Need to be added')
+    
+    elif p == '':
+        messagebox.showerror('Error', 'Need to be added')
+
+    elif n == '':
+        messagebox.showerror('Error', 'Need to be added')
+
+    else :
+        e.write()
+        name.delete(0, 'end')
+        email.delete(0, 'end')
+        password.delete(0, 'end')
+        messagebox.showinfo('Added Object', 'Successfully Added \n' + 'Name: ' + n + '\nEmail: ' + m + '\nPassword: ' + p)
+        readfile()
 
 def to_delete():
     d = object_display(screen, 'n', 'e', 'p', 'i')
