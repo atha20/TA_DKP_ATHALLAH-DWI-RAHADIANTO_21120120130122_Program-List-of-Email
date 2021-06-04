@@ -91,8 +91,7 @@ class object_display:
             f.close()
 
             f = open('emails.txt', 'w')
-            count = 0
-
+            
             f.close()
             readfile()
 
